@@ -13,9 +13,32 @@
 
 html{
     font-family: 'Kumbh Sans', sans-serif;
+    font-size: 62.5%;
 }
 
+.container {
+    width: 100vw;
+    height: 98vh;
+    background-color: var(--dark-cyan);
+    background-image: url("../images/bg-pattern-bottom.svg");
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.card {
+    background-color: white;
+    border-radius: 15px;
+    width: 90%;
+    height: 60%;
+}
 
+.social {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 1rem;
+}
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
