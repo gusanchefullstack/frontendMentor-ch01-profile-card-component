@@ -13,32 +13,68 @@
 
 html{
     font-family: 'Kumbh Sans', sans-serif;
-    font-size: 62.5%;
+    font-size: 62.5%;       
 }
 
 .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100vw;
     height: 98vh;
+    background-image: url('../images/bg-pattern-top.svg');
     background-color: var(--dark-cyan);
-    background-image: url("../images/bg-pattern-bottom.svg");
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .card {
     background-color: white;
-    border-radius: 15px;
-    width: 90%;
-    height: 60%;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    width: 86%;
+    position: absolute;
 }
 
-.social {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 2rem 1rem;
+.top img {
+    width: 100%;
+    
 }
+
+.profile {
+    text-align: center;
+    position: relative;
+    top: -5rem;
+}
+
+.profile-picture {
+    display: inline-block;
+}
+
+.profile-picture__border {
+    border-radius: 50%;
+    background-color: white;
+}
+
+.profile-picture__img {
+    border-radius: 50%;
+    margin: 0.5rem;
+}
+
+.profile-name {
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding: 1.5rem;
+}
+
+.profile-city {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--dark-gray)
+}
+.profile-age {
+    font-weight: 1.8rem;
+    color: var(--dark-gray);
+}
+
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
