@@ -16,14 +16,24 @@ html{
     font-size: 62.5%;       
 }
 
+body {
+    background-color: var(--dark-cyan);
+    background-image: 
+        url('../images/bg-pattern-top.svg'),
+        url('../images/bg-pattern-bottom.svg');
+    background-size: cover, cover;
+    background-position: 
+        -460px -300px,
+        180px 320px;
+    background-repeat: no-repeat;
+}
+
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100vw;
     height: 98vh;
-    background-image: url('../images/bg-pattern-top.svg');
-    background-color: var(--dark-cyan);
 }
 
 .card {
@@ -101,5 +111,6 @@ html{
     color: var(--dark-gray);
     letter-spacing: 0.2rem;
 }
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
