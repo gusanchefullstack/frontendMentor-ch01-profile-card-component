@@ -42,6 +42,8 @@ body {
     overflow: hidden;
     width: 86%;
     position: absolute;
+    max-width: 324px;
+    max-height: 366px;
 }
 
 .top img {
@@ -110,6 +112,17 @@ body {
     font-size: 1rem;
     color: var(--dark-gray);
     letter-spacing: 0.2rem;
+}
+
+@media all and (min-width: 480px) {
+
+    body {
+        background-size: cover, 80%;
+        background-position: 
+            -700px -800px,
+            650px 320px;
+        background-repeat: no-repeat;
+    }
 }
 
 .attribution { font-size: 11px; text-align: center; }
